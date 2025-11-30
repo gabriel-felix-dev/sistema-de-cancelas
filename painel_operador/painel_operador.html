@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Painel do Operador</title>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Status das Cancelas</h2>
+
+    <div class="status-boxes">
+        <div class="box">
+    <h3>Cancela 1</h3>
+    <div id="statusCancela1" class="status aberta">Aberta</div>
+    <button id="btnCancela1">Acionar cancela 1</button>
+</div>
+
+<div class="box">
+    <h3>Cancela 2</h3>
+    <div id="statusCancela2" class="status fechada">Fechada</div>
+    <button id="btnCancela2">Acionar cancela 2</button>
+</div>
+    </div>
+
+    <h3>Eventos recentes</h3>
+
+    <div class="eventos" id="lista-eventos">
+        <div class="linha">
+            <span>12/11/2025</span>
+            <span>Abertura manual</span>
+        </div>
+        <div class="linha">
+            <span>12/11/2025</span>
+            <span>Entrada autorizada</span>
+        </div>
+        <div class="linha">
+            <span>12/11/2025</span>
+            <span>Saída autorizada</span>
+        </div>
+        <div class="linha">
+            <span>12/11/2025</span>
+            <span>Entrada autorizada</span>
+        </div>
+    </div>
+
+    <h3>Gráficos de entrada de veículos</h3>
+
+    <div class="grafico">
+        <canvas id="meuGrafico"></canvas>
+    </div>
+
+    <a href="../index.html"><button class="sair">SAIR</button></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script_operador.js"></script>
+
+</div>
+
+</body>
+</html>

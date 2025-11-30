@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background: #0d0f18;
+    background-size: cover;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 380px;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* campo digitável */
+.ticket-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.4);
+    margin-bottom: 25px;
+    outline: none;
+}
+
+.calculo {
+    background: rgba(50, 80, 140, 0.7);
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+
+.info {
+    font-size: 16px;
+}
+
+.pagar {
+    width: 100%;
+    padding: 14px;
+    background: #00aee8;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.sair {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: gray;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.ticket-input::placeholder {
+    color: white;
+    opacity: 1;  /* garante que fique realmente branco */
+}

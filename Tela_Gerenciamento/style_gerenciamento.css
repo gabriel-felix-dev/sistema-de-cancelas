@@ -1,0 +1,167 @@
+/*
+ * ----------------------------------------------------
+ * ESTILOS GERAIS E LAYOUT
+ * ----------------------------------------------------
+ */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0d0f18; /* Usando o fundo mais escuro da tela de pagamento */
+    color: white; /* Cor do texto padrão é branca */
+}
+
+/* O container deve ser maior para a tela de gerenciamento */
+.container-gerenciamento {
+    width: 90%; 
+    max-width: 800px; /* Largura máxima maior para a tabela */
+    margin: 40px auto;
+    padding: 20px;
+    background: #1a1e28; /* Fundo levemente mais claro para o conteúdo principal */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    text-align: center;
+    color: #00a8d6;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #fff;
+    border-bottom: 2px solid #00a8d6;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #333;
+    margin: 40px 0;
+}
+
+/*
+ * ----------------------------------------------------
+ * ESTILOS DO FORMULÁRIO (CREATE)
+ * ----------------------------------------------------
+ */
+#form-entrada {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px; /* Limita a largura do formulário */
+    margin: 0 auto;
+    padding: 20px;
+    background: #232731; /* Fundo para destacar a seção de entrada */
+    border-radius: 8px;
+}
+
+#form-entrada label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#form-entrada input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2); /* Input transparente parecido com o campo */
+    color: white;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#form-entrada input::placeholder {
+    color: #ccc;
+    opacity: 0.8;
+}
+
+.btn-create {
+    /* Estilo do btn-entrar azul */
+    background: #00a8d6;
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-create:hover {
+    background: #007bbd;
+}
+
+/*
+ * ----------------------------------------------------
+ * ESTILOS DA TABELA (READ/UPDATE/DELETE)
+ * ----------------------------------------------------
+ */
+#tabela-estacionamento {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+#tabela-estacionamento th,
+#tabela-estacionamento td {
+    padding: 12px 8px;
+    text-align: left;
+    border-bottom: 1px solid #333; /* Linhas divisórias claras */
+}
+
+#tabela-estacionamento th {
+    background-color: #00a8d6; /* Cabeçalho azul */
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#lista-veiculos tr:nth-child(even) {
+    background-color: #1f232d; /* Alterna a cor das linhas para melhor leitura */
+}
+
+/*
+ * ----------------------------------------------------
+ * ESTILOS DOS BOTÕES DE AÇÃO (UPDATE/DELETE)
+ * ----------------------------------------------------
+ */
+.btn-editar, .btn-saida {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: opacity 0.3s;
+}
+
+.btn-editar {
+    /* Amarelo para edição (UPDATE) */
+    background-color: #ffc107; 
+    color: #333;
+}
+
+.btn-saida {
+    /* Vermelho para saída (DELETE) */
+    background-color: #dc3545; 
+    color: white;
+}
+
+.btn-editar:hover, .btn-saida:hover {
+    opacity: 0.8;
+}
+
+/* Responsividade básica para telas menores */
+@media (max-width: 600px) {
+    #tabela-estacionamento
+
+

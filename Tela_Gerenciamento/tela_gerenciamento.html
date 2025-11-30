@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Estacionamento</title>
+    <link rel="stylesheet" href="style_gerenciamento.css"> 
+</head>
+<body>
+
+    <div class="container-gerenciamento">
+        <h1>Gerenciamento de Estacionamento</h1>
+
+        <section id="entrada-veiculo">
+            <h2>Registrar Entrada</h2>
+            <form id="form-entrada">
+                <label for="placa">Placa do Veículo:</label>
+                <input type="text" id="placa" placeholder="Ex: ABC1234" required>
+                
+                <label for="proprietario">Proprietário (Opcional):</label>
+                <input type="text" id="proprietario" placeholder="Ex: João Silva">
+                
+                <button type="submit" class="btn-create">Estacionar (CREATE)</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="veiculos-estacionados">
+            <h2>Veículos Estacionados</h2>
+            <table id="tabela-estacionamento">
+                <thead>
+                    <tr>
+                        <th>Placa</th>
+                        <th>Proprietário</th>
+                        <th>Ticket</th>
+                        <th>Entrada</th>
+                        <th>Ações (U/D)</th> 
+                    </tr>
+                </thead>
+                <tbody id="lista-veiculos">
+                    </tbody>
+            </table>
+            <p id="mensagem-vazio" style="text-align: center; color: gray; margin-top: 20px;">Nenhum veículo estacionado.</p>
+        </section>
+
+    </div>
+
+    <script src="script_gerenciamento.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #0a0f16; /* fundo escuro parecido */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    width: 300px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.foto-usuario {
+    width: 120px;
+    height: 120px;
+    margin: 20px auto;
+    display: block;
+}
+
+.campo::placeholder {
+    color: white;
+    opacity: 1;  /* garante que fique realmente branco */
+}
+
+.campo {
+    width: 100%; 
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.4);
+    color: #000;
+    font-size: 15px;
+    box-sizing: border-box; /* IMPORTANTE */
+}
+
+.link {
+    display: block;
+    margin-top: 6px;
+    font-size: 13px;
+    color: #ccc;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.btn-entrar {
+    background: #00a8d6;
+    width: 100%;          /* mesmo tamanho dos inputs */
+    padding: 12px;
+    margin: 10px auto;    /* centraliza horizontalmente */
+    display: block;       /* garante que a largura funcione certinho */
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-cinza {
+    background: #888;
+    width: 100%;          /* mesmo tamanho dos inputs */
+    padding: 12px;
+    margin: 10px auto;    /* centraliza horizontalmente */
+    display: block;       /* garante que a largura funcione certinho */
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}

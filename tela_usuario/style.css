@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background: #0d0f18;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 380px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.perfil {
+    text-align: right;
+    margin-right: 15px;
+}
+
+.perfil img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.card-saldo {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.titulo {
+    margin: 0;
+    font-size: 16px;
+}
+
+.linha-saldo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linha-valor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+.valor {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.icone {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.pix {
+    background: #00c26c;
+    color: white;
+}
+
+.credito {
+    background: #273c7d;
+    color: white;
+}
+
+.boleto {
+    background: rgba(255, 255, 255, 0.4);
+    color: black;
+}
+
+h3 {
+    margin-top: 25px;
+}
+
+.historico {
+    background: rgba(255,255,255,0.15);
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 12px;
+}
+
+.item {
+    margin-bottom: 15px;
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}
+
+.data {
+    color: #dedede;
+    display: inline-block;
+}
+
+.valor-hist {
+    float: right;
+    font-weight: bold;
+}
+
+.negativo {
+    color: #ff4d4d;
+}
+
+.positivo {
+    color: #00ff6c;
+}
+
+.desc {
+    margin: 3px 0;
+    color: #b6d4ff;
+}
+
+.sair {
+    background: gray;
+    border-radius: 10px;
+    margin-top: 25px;
+    padding: 12px;
+}

@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background: #0d0f18;
+    background-size: cover;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 380px;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 25px;
+}
+
+/* Painel superior */
+.painel {
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.box {
+    background: rgba(255,255,255,0.20);
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.box p {
+    margin: 5px 0 0;
+    font-weight: bold;
+}
+
+.icon {
+    width: 35px;
+    margin-bottom: 5px;
+}
+
+/* ============ GRÁFICOS MAIORES ============ */
+
+.graficos {
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 12px;
+
+    display: grid;
+    grid-template-columns: 1fr; /* agora 1 por linha */
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+.grafico {
+    background: rgba(255,255,255,0.10);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.grafico h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+}
+
+/* aumento real dos gráficos */
+.grafico canvas {
+    width: 100% !important;
+    height: 200px !important;
+}
+
+/* Botão sair */
+.sair {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: gray;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
