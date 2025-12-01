@@ -9,6 +9,7 @@
 <body>
 
     <div class="container-gerenciamento">
+        
         <h1>Gerenciamento de Estacionamento</h1>
 
         <section id="entrada-veiculo">
@@ -17,10 +18,13 @@
                 <label for="placa">Placa do Veículo:</label>
                 <input type="text" id="placa" placeholder="Ex: ABC1234" required>
                 
-                <label for="proprietario">Proprietário (Opcional):</label>
+                <label for="proprietario">Proprietário:</label>
                 <input type="text" id="proprietario" placeholder="Ex: João Silva">
                 
-                <button type="submit" class="btn-create">Estacionar (CREATE)</button>
+                <label for="contato_proprietario">Contato do Proprietário:</label>
+                <input type="text" id="contato_proprietario" placeholder="Ex: 083 98888-7777">
+                
+                <button type="submit" class="btn-create">Estacionar</button>
             </form>
         </section>
 
@@ -33,9 +37,10 @@
                     <tr>
                         <th>Placa</th>
                         <th>Proprietário</th>
+                        <th>Contato</th>
                         <th>Ticket</th>
                         <th>Entrada</th>
-                        <th>Ações (U/D)</th> 
+                        <th>Ações</th> 
                     </tr>
                 </thead>
                 <tbody id="lista-veiculos">
@@ -44,8 +49,13 @@
             <p id="mensagem-vazio" style="text-align: center; color: gray; margin-top: 20px;">Nenhum veículo estacionado.</p>
         </section>
 
-    </div>
+        <br>
+
+        <a href="../index.html"><button class="btn-sair">Sair</button></a>
+
+    </div>    
 
     <script src="script_gerenciamento.js"></script>
+    
 </body>
 </html>

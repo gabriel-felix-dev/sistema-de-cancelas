@@ -161,7 +161,21 @@ hr {
 }
 
 /* Responsividade básica para telas menores */
-@media (max-width: 600px) {
-    #tabela-estacionamento
 
 
+.btn-sair {
+    width: 50%;
+    margin-left: 25%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: #808080;
+}
+
+button:hover{
+    background: #cacaca;
+    transform: scale(1.05);
+} 

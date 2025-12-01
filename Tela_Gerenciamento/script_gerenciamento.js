@@ -32,9 +32,10 @@ formEntrada.addEventListener('submit', function(event) {
 
     const placa = document.getElementById('placa').value.trim().toUpperCase();
     const proprietario = document.getElementById('proprietario').value.trim();
+    const contato_proprietario = document.getElementById('contato_proprietario').value.trim().toUpperCase();
 
-    if (!placa) {
-        alert('A placa é obrigatória!');
+    if (!placa | !proprietario | !contato_proprietario) {
+        alert('Faltam informações!');
         return;
     }
 
@@ -49,6 +50,7 @@ formEntrada.addEventListener('submit', function(event) {
     const novoVeiculo = {
         placa: placa,
         proprietario: proprietario,
+        contato_proprietario: contato_proprietario,
         horaEntrada: new Date().toISOString(), // Grava o timestamp
         // Gera um código único (simulando um ticket)
         ticket: Math.random().toString(36).substring(2, 8).toUpperCase() 
@@ -85,7 +87,8 @@ function renderizarTabela() {
 
         // Células com os dados
         row.insertCell().textContent = veiculo.placa;
-        row.insertCell().textContent = veiculo.proprietario || 'N/A';
+        row.insertCell().textContent = veiculo.proprietario;
+        row.insertCell().textContent = veiculo.contato_proprietario;
         row.insertCell().textContent = veiculo.ticket;
         // Formata a hora de entrada para melhor visualização
         row.insertCell().textContent = new Date(veiculo.horaEntrada).toLocaleTimeString('pt-BR');
