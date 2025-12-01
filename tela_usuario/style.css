@@ -6,11 +6,15 @@ body {
     color: white;
 }
 
-.container {
-    width: 90%;
-    max-width: 380px;
-    margin: auto;
-    padding-top: 20px;
+.container-gerenciamento {
+    width: 100%; 
+    max-width: 800px; /* Largura máxima maior para a tabela */
+    margin: 40px auto;
+    padding: 20px;
+    background: #1a1e28; /* Fundo levemente mais claro para o conteúdo principal */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    align-items: center;
 }
 
 h2 {
@@ -29,9 +33,12 @@ h2 {
 }
 
 .card-saldo {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
     background: rgba(255, 255, 255, 0.15);
     border-radius: 12px;
-    padding: 20px;
+    padding: 10px;
     margin-top: 20px;
 }
 
@@ -131,9 +138,19 @@ h3 {
     color: #b6d4ff;
 }
 
-.sair {
-    background: gray;
-    border-radius: 10px;
-    margin-top: 25px;
+.btn-sair {
+    width: 50%;
+    margin-left: 25%;
     padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: #808080;
 }
+
+.btn-sair:hover{
+    background: #cacaca;
+    transform: scale(1.05);
+} 

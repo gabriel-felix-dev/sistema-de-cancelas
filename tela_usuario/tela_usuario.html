@@ -1,67 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Minha Carteira</title>
 </head>
+
 <body>
 
-<div class="container">
+    <div class="container-gerenciamento">
 
-    <h2>MINHA CARTEIRA</h2>
+        <div class="perfil">
+            <img src="imgs/icon_usuario.png" alt="perfil">
+        </div>
 
-    <div class="perfil">
-        <img src="imgs/icon_usuario.png" alt="perfil">
+        <h2>MINHA CARTEIRA</h2>
+
+        <div class="card-saldo">
+
+            <div class="linha-saldo">
+                <p class="titulo">Saldo atual</p>
+            </div>
+            <br>
+            <div class="linha-valor">
+                <p class="valor" id="valorSaldo">R$ 65,20</p>
+                <span class="icone" id="botaoOlho">👁️</span>
+            </div>
+
+            <button class="pix">Recarga via PIX</button>
+            <button class="credito">Recarga via cartão de crédito</button>
+            <button class="boleto">Recarga via boleto bancário</button>
+
+        </div>
+
+        <hr>
+
+        <div class="card-saldo">
+
+            <h3>Histórico de Transações</h3>
+
+
+            <div class="item">
+                <span class="data">12/11/2025</span>
+                <span class="valor-hist negativo">-R$ 7,00</span>
+                <p class="desc">Pagamento de estacionamento</p>
+            </div>
+
+            <div class="item">
+                <span class="data">11/11/2025</span>
+                <span class="valor-hist negativo">-R$ 7,00</span>
+                <p class="desc">Pagamento de estacionamento</p>
+            </div>
+
+            <div class="item">
+                <span class="data">10/11/2025</span>
+                <span class="valor-hist positivo">+R$ 50,00</span>
+                <p class="desc">Recarga via PIX</p>
+            </div>
+
+        </div>
     </div>
 
-    <div class="card-saldo">
+    <a href="../index.html"><button class="btn-sair">SAIR</button></a>
 
-        <div class="linha-saldo">
-            <p class="titulo">Saldo atual</p>
-        </div>
 
-        <div class="linha-valor">
-            <p class="valor" id="valorSaldo">R$ 65,20</p>
-            <span class="icone" id="botaoOlho">👁️</span>
-        </div>
 
-        <button class="pix">Recarga via PIX</button>
-        <button class="credito">Recarga via cartão de crédito</button>
-        <button class="boleto">Recarga via boleto bancário</button>
 
-    </div>
-
-    <h3>Histórico de Transações</h3>
-
-    </div>
-
-        <div class="item">
-            <span class="data">12/11/2025</span>
-            <span class="valor-hist negativo">-R$ 7,00</span>
-            <p class="desc">Pagamento de estacionamento</p>
-        </div>
-
-        <div class="item">
-            <span class="data">11/11/2025</span>
-            <span class="valor-hist negativo">-R$ 7,00</span>
-            <p class="desc">Pagamento de estacionamento</p>
-        </div>
-
-        <div class="item">
-            <span class="data">10/11/2025</span>
-            <span class="valor-hist positivo">+R$ 50,00</span>
-            <p class="desc">Recarga via PIX</p>
-        </div>
-
-    </div>
-
-    <a href="../index.html"><button class="sair">SAIR</button></a>
-
-</div>
-
-<script src="ocultar.js"></script>
+    <script src="ocultar.js"></script>
 
 </body>
+
 </html>

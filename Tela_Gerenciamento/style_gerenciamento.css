@@ -175,7 +175,7 @@ hr {
     background: #808080;
 }
 
-button:hover{
+.btn-sair:hover{
     background: #cacaca;
     transform: scale(1.05);
 } 
