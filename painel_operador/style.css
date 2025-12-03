@@ -7,11 +7,21 @@ body {
     color: white;
 }
 
+.btn:hover{
+    background: #3c5dc0;
+    transform: scale(1.05);
+}
+
 .container {
-    width: 90%;
-    max-width: 380px;
-    margin: auto;
-    padding-top: 20px;
+    width: 100%; 
+    max-width: 800px; /* Largura máxima maior para a tabela */
+    margin: 40px auto;
+    padding: 20px;
+    background: #1a1e28; /* Fundo levemente mais claro para o conteúdo principal */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    justify-content: center; /* horizontal */
+    align-items: center;    /* vertical */ 
 }
 
 h2, h3 {
@@ -85,9 +95,19 @@ button {
     margin-bottom: 30px;
 }
 
-.sair {
-    background: gray;
+.btn-sair {
+    width: 50%;
+    margin-left: 25%;
     padding: 12px;
-    width: 100%;
-    border-radius: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: #808080;
 }
+
+.btn-sair:hover{
+    background: #cacaca;
+    transform: scale(1.05);
+} 

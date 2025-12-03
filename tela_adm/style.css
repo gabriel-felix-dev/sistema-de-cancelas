@@ -79,14 +79,40 @@ h2 {
     height: 200px !important;
 }
 
-/* Botão sair */
-.sair {
+.btn-sair {
     width: 100%;
+   
     padding: 12px;
     border: none;
-    background: gray;
-    border-radius: 10px;
-    color: black;
-    font-size: 16px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     cursor: pointer;
+    background: #808080;
+}
+
+.btn-sair:hover{
+    background: #cacaca;
+    transform: scale(1.05);
+} 
+
+.btn-entrar-1 {
+    background: #00a8d6;
+    width: 100%;          /* mesmo tamanho dos inputs */
+    padding: 12px;
+    margin: 10px auto;    /* centraliza horizontalmente */
+    display: block;       /* garante que a largura funcione certinho */
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-entrar-1:hover{
+    background: #8cdcf1;
+    transform: scale(1.05);
+}
+
+a{
+    text-decoration: none;
 }

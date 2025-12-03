@@ -10,9 +10,16 @@ a{
 }
 
 .container {
-    width: 300px;
+    max-width: 400px; 
+    height: 480px;
     margin: 40px auto;
+    padding: 20px;
+    background: #1a1e28; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    align-items: center;
     text-align: center;
+    color: white;
 }
 
 .foto-usuario {
@@ -49,7 +56,11 @@ a{
     
 }
 
-.btn-entrar {
+input:hover{
+    transform: scale(1.05);
+}
+
+.btn-entrar-1 {
     background: #00a8d6;
     width: 100%;          /* mesmo tamanho dos inputs */
     padding: 12px;
@@ -61,14 +72,24 @@ a{
     cursor: pointer;
 }
 
-.btn-cinza {
-    background: #888;
-    width: 100%;          /* mesmo tamanho dos inputs */
-    padding: 12px;
-    margin: 10px auto;    /* centraliza horizontalmente */
-    display: block;       /* garante que a largura funcione certinho */
-    border-radius: 8px;
-    border: none;
-    color: white;
-    cursor: pointer;
+.btn-entrar-1:hover{
+    background: #8cdcf1;
+    transform: scale(1.05);
 }
+
+.btn-sair {
+    width: 100%;
+   
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: #808080;
+}
+
+.btn-sair:hover{
+    background: #cacaca;
+    transform: scale(1.05);
+} 

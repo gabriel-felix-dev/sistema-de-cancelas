@@ -7,12 +7,25 @@ body {
     color: white;
 }
 
+a{
+    text-decoration: none;  
+}
+
 .container {
-    width: 90%;
-    max-width: 380px;
-    margin: auto;
-    padding-top: 20px;
+    max-width: 400px; 
+    height: 450px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #1a1e28; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    align-items: center;
     text-align: center;
+    color: white;
+}
+
+input:hover{
+    transform: scale(1.05);
 }
 
 h2 {
@@ -26,7 +39,6 @@ h3 {
 
 /* campo digitável */
 .ticket-input {
-    width: 100%;
     padding: 12px;
     font-size: 20px;
     font-weight: bold;
@@ -52,28 +64,39 @@ h3 {
     font-size: 16px;
 }
 
-.pagar {
-    width: 100%;
-    padding: 14px;
-    background: #00aee8;
+.btn-pagar{
+    background: #00a8d6;
+    width: 100%;          /* mesmo tamanho dos inputs */
+    padding: 12px;
+    margin: 10px auto;    /* centraliza horizontalmente */
+    display: block;       /* garante que a largura funcione certinho */
+    border-radius: 8px;
     border: none;
-    border-radius: 12px;
     color: white;
-    font-size: 18px;
-    font-weight: bold;
     cursor: pointer;
-    margin-bottom: 20px;
 }
 
-.sair {
-    width: 100%;
+.btn-pagar:hover{
+    background: #8cdcf1;
+    transform: scale(1.05);
+}
+
+.btn-cinza {
+    background: #888;
+    width: 100%;          /* mesmo tamanho dos inputs */
     padding: 12px;
+    margin: 10px auto;    /* centraliza horizontalmente */
+    display: block;       /* garante que a largura funcione certinho */
+    border-radius: 8px;
     border: none;
-    background: gray;
-    border-radius: 10px;
-    color: black;
-    font-size: 16px;
+    color: white;
     cursor: pointer;
+    margin-top: 50px;
+}
+
+.btn-cinza:hover{
+    background: #bdbdbd;
+    transform: scale(1.05);
 }
 
 .ticket-input::placeholder {

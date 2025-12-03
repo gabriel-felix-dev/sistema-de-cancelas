@@ -96,6 +96,7 @@ hr {
 
 .btn-create:hover {
     background: #007bbd;
+    transform: scale(1.05);
 }
 
 /*
@@ -160,7 +161,7 @@ hr {
     opacity: 0.8;
 }
 
-/* Responsividade básica para telas menores */
+
 
 
 .btn-sair {
@@ -173,6 +174,7 @@ hr {
     margin-bottom: 10px;
     cursor: pointer;
     background: #808080;
+    color: white;
 }
 
 .btn-sair:hover{
