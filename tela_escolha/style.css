@@ -10,9 +10,16 @@ a{
 }
 
 .container {
-    width: 300px;
+    max-width: 400px; 
+    height: 450px;
     margin: 40px auto;
+    padding: 20px;
+    background: #1a1e28; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    align-items: center;
     text-align: center;
+    color: white;
 }
 
 .foto-usuario {
@@ -49,7 +56,7 @@ a{
     
 }
 
-.btn-entrar {
+.btn-entrar-1 {
     background: #00a8d6;
     width: 100%;          /* mesmo tamanho dos inputs */
     padding: 12px;
@@ -59,6 +66,28 @@ a{
     border: none;
     color: white;
     cursor: pointer;
+}
+
+.btn-entrar-1:hover{
+    background: #8cdcf1;
+    transform: scale(1.05);
+}
+
+.btn-entrar-2 {
+    background: #6dcbe6;
+    width: 100%;          /* mesmo tamanho dos inputs */
+    padding: 12px;
+    margin: 10px auto;    /* centraliza horizontalmente */
+    display: block;       /* garante que a largura funcione certinho */
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-entrar-2:hover{
+    background: #32b5da;
+    transform: scale(1.05);
 }
 
 .btn-cinza {
@@ -71,4 +100,10 @@ a{
     border: none;
     color: white;
     cursor: pointer;
+    margin-top: 110px;
+}
+
+.btn-cinza:hover{
+    background: #bdbdbd;
+    transform: scale(1.05);
 }
